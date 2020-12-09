@@ -7,3 +7,5 @@ const db = knex(
     ? config.production
     : config.development
 );
+
+module.exports = db;

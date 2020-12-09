@@ -1,10 +1,10 @@
 const express = require('express');
+const server = express();
 const morgan = require('morgan');
 const helmet = require('helmet');
 
 const carsRouter = require('./cars/cars-router');
 
-const server = express();
 
 server.use(helmet());
 server.use(morgan('dev'));
